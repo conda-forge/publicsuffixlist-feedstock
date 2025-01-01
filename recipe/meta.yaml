@@ -14,15 +14,15 @@ build:
     - publicsuffixlist-download = publicsuffixlist.update:updatePSL
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
     # Needed for the CLI
 
@@ -34,6 +34,7 @@ test:
     - publicsuffixlist-download --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ko-zu/psl
