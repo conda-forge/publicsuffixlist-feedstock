@@ -1,5 +1,5 @@
 {% set name = "publicsuffixlist" %}
-{% set version = "1.0.2.20260114" %}
+{% set version = "1.0.2.20260117" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/publicsuffixlist-{{ version }}.tar.gz
-  sha256: 3cefa4a292841d406a6c5a07bc65504156ecb1be1dd99cd730b98b6332f1d52d
+  sha256: 24e11230db4fe4d7e68bb43203f80bf527f614c0625a7dc2749d7b0444d858e5
 
 build:
   entry_points:
