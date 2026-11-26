@@ -1,5 +1,5 @@
 {% set name = "publicsuffixlist" %}
-{% set version = "1.1.2.20261125" %}
+{% set version = "1.1.2.20261126" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/publicsuffixlist-{{ version }}.tar.gz
-  sha256: b1bb846d1892533320925c149fd61d2c3d2ef794b639618fb1102f457ebcf21b
+  sha256: ba6c3e8a6778aef676fe3cbc0c9613da7eb16319b79979ec8fbccd8c6408f5cc
 
 build:
   entry_points:
